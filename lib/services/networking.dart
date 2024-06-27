@@ -7,7 +7,7 @@ class NetworkHelper{
 
   final String url;
 
-  Future<void> getData() async {
+  Future<dynamic> getData() async {
     final uri = Uri.parse(url);
     http.Response response = await http.get(uri);
 
